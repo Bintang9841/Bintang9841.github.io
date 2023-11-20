@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill Cafe- Pemesanan</title>
+    <!-- Tautan ke file CSS Anda -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gaya untuk elemen splash screen */
+        
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        /* Gaya untuk gambar pada splash screen */
+        
+        #splash-screen img {
+            width: 300px;
+            /* Sesuaikan ukuran gambar */
+            height: auto;
+            /* Sesuaikan ukuran gambar */
+            animation: fadeIn 1s ease-in-out;
+            /* Animasi muncul */
+        }
+        /* Animasi */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Header atau judul halaman -->
+        <h1>Chill Cafe- Pemesanan</h1>
+    </header>
+
+    <main>
+        <!-- Daftar item yang bisa dipesan -->
+        <!-- ... (Bagian HTML sebelumnya) -->
+
+        <div class="menu">
+            <!-- Item 1 -->
+            <div class="item">
+                <img src="assets/images/affogato.jpg" alt="Nama Item 1">
+                <h2>affogato</h2>
+                <p>Harga: Rp 50,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item">
+                <img src="assets/images/americano.jpg" alt="americano">
+                <h2>americano</h2>
+                <p>Harga: Rp 40,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item">
+                <img src="assets/images/cappuccino.jpg" alt="cappuccino">
+                <h2>cappuccino</h2>
+                <p>Harga: Rp 25,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item">
+                <img src="assets/images/expresso.jpg" alt="expresso">
+                <h2>expresso</h2>
+                <p>Harga: Rp 50,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item">
+                <img src="assets/images/flat white.jpg" alt="flat white">
+                <h2>flat white</h2>
+                <p>Harga: Rp 20,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="item">
+                <img src="assets/images/iris coffee.jpg" alt="iris coffee">
+                <h2>iris coffee</h2>
+                <p>Harga: Rp 120,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="item">
+                <img src="assets/images/latte.jpg" alt="latte">
+                <h2>latte</h2>
+                <p>Harga: Rp 65,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="item">
+                <img src="assets/images/macchiato.jpg" alt="macchiato">
+                <h2>macchiato</h2>
+                <p>Harga: Rp 35,000</p>
+                <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+            </div>
+
+
+            <!-- ... (Item lainnya) -->
+        </div>
+
+        <!-- ... (Bagian HTML setelahnya) -->
+
+
+        <!-- Keranjang belanja -->
+        <div class="keranjang">
+            <h2>Keranjang Belanja</h2>
+            <ul class="daftar-belanja">
+                <!-- Daftar item yang telah ditambahkan -->
+            </ul>
+            <button class="checkout">Checkout</button>
+            <!-- ... (Bagian HTML sebelumnya) -->
+
+            <!-- Element untuk jumlah uang yang diterima -->
+            <div class="uang-diterima-container">
+                <input type="number" placeholder="Jumlah Uang" class="input-uang-diterima">
+
+            </div>
+
+            <!-- ... (Bagian HTML setelahnya) -->
+
+        </div>
+
+        <!-- Element untuk struk pembelian -->
+
+
+
+        <!-- Element untuk struk pembelian -->
+        <div class="struk-pembelian-container">
+            <h2>Struk Pembelian</h2>
+            <div class="struk-pembelian">
+                <!-- Struk pembelian akan ditampilkan di sini -->
+            </div>
+        </div>
+
+        <!-- Bagian splash screen -->
+        <div id="splash-screen">
+            <!-- Konten Splash Screen (Logo, Pesan, dll.) -->
+            <!-- Ganti "nama-gambar.jpg" dengan nama file gambar Anda -->
+            <img src="logo-512.png" alt="Splash Screen Image">
+        </div>
+        </div>
+
+
+
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const splashScreen = document.getElementById('splash-screen');
+
+            // Hilangkan splash screen setelah 2 detik (2000 milidetik)
+            setTimeout(function() {
+                splashScreen.style.display = 'none';
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

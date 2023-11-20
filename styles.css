@@ -1,0 +1,59 @@
+/* styles.css */
+
+
+/* Gaya umum */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+.keranjang {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+
+/* CSS */
+
+.splash {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    /* Styling lainnya sesuai kebutuhan */
+}
+
+
+/* ...Tambahkan gaya lain sesuai kebutuhan Anda... */
